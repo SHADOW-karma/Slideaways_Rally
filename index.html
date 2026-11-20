@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Slideways Rally</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #101827;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            padding: 22px;
+            text-align: center;
+            background: #182b49;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #ffffff;
+        }
+
+        .subtitle {
+            margin-top: 8px;
+            color: #b9c9df;
+        }
+
+        main {
+            width: 95%;
+            max-width: 1200px;
+            margin: 30px auto;
+        }
+
+        .game-container {
+            width: 100%;
+            height: min(70vh, 720px);
+            min-height: 400px;
+            background: #202f4e;
+            border: 3px solid #344b70;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .controls {
+            margin-top: 20px;
+            padding: 20px;
+            background: #182b49;
+            border-radius: 12px;
+            line-height: 2;
+        }
+
+        .controls h2 {
+            margin-bottom: 10px;
+            color: #63b3ff;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            color: #8fa4c0;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            .game-container {
+                min-height: 350px;
+                height: 60vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🏁 Slideways Rally</h1>
+        <p class="subtitle">Jeu de rallye en ligne</p>
+    </header>
+
+    <main>
+
+        <div class="game-container">
+            <iframe
+                src="https://arcadrome.com/embed/slideways-rally"
+                title="Slideways Rally"
+                allow="autoplay; fullscreen; gamepad"
+                allowfullscreen
+                scrolling="no">
+            </iframe>
+        </div>
+
+        <section class="controls">
+            <h2>Commandes du jeu</h2>
+            <p>🚗 WASD / Flèches : conduire</p>
+            <p>🅿️ Espace : frein à main</p>
+            <p>⚙️ Shift / Ctrl : changer de vitesse</p>
+            <p>📷 C : changer de caméra</p>
+            <p>🔄 R : réinitialiser la voiture</p>
+            <p>⏸️ P / Échap : pause</p>
+        </section>
+
+    </main>
+
+    <footer>
+        Slideways Rally — Page de jeu
+    </footer>
+
+</body>
+</html>
